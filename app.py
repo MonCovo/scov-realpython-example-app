@@ -9,7 +9,7 @@ def customerbynumber(telno):
     telno = re.sub('[^0-9]','', telno)
     reader = csv.DictReader(open('data/caller_info.csv', 'r'), delimiter = ',', quotechar="\"")
     for rec in reader:
-        value = rec['Number']
+        value = rec['number']
         if str(value) == str(telno):
             return rec
     return ('', 204)
@@ -29,7 +29,7 @@ def order(telno):
     telno = re.sub('[^0-9]','', telno)
     reader = csv.DictReader(open('data/order.csv', 'r'), delimiter = ',', quotechar="\"")
     for rec in reader:
-        value = rec['Number']
+        value = rec['number']
         if str(value) == str(telno):
             return rec
     return ('', 204)
