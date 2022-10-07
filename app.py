@@ -33,13 +33,3 @@ def order(telno):
         if str(value) == str(telno):
             return rec
     return ('', 204)
-
-@app.route("/api/caller_purchase/<telno>")
-def order(telno):
-    telno = re.sub('[^0-9]','', telno)
-    reader = csv.DictReader(open('data/caller_purchase.csv', 'r'), delimiter = ',', quotechar="\"")
-    for rec in reader:
-        value = rec['number']
-        if str(value) == str(telno):
-            return rec
-    return ('', 204)
