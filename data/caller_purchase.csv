@@ -1,8 +1,5 @@
-number,reg,branch
-441226663024,ls64gzp,Ruislip
-441226663025,hn67twa,Chalfont
-441226663026,ey18duj,Colindale
-441226663027,ke18vzy,High Wycombe
-441226663028,fx16zvv,Reading
-441226663029,kc19wfo,Slough
-441226663030,gl70mdn,St Albans
+firstname,lastname,salutation,number,carreg,carmake,carmodel,motvaliduntil,fueltype,servicedate,mileage
+Simon,Coventry,Mr,447584684287,KV61MPX,Mercedes,C Class,20-Jan-23,Diesel,24-Dec-23,79244
+Elizabeth,Coventry,Mrs,447810002323,RO08LKC,Volkswagen,Golf,24-Jan-23,Petrol,24-Dec-23,32939
+Matthew,Hodges,Mr,447860224953,LJ04OBR,Skoda,Fabia,28-May-23,Petrol,20-Dec-23,41895
+Peggy,Rawden,Mrs,447841429064,KT08OYV,Volkswagen,Touran,02-Dec-22,Diesel,20-Dec-23,136568
