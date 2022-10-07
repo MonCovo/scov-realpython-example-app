@@ -34,9 +34,9 @@ def order(telno):
             return rec
     return ('', 204)
 
-    @app.route("/api/purchase/<telno>")
-    def order(telno):
-        telno = re.sub('[^0-9]','', telno)
+@app.route("/api/purchase/<telno>")
+def order(telno):
+    telno = re.sub('[^0-9]','', telno)
     reader = csv.DictReader(open('data/caller_purchase.csv', 'r'), delimiter = ',', quotechar="\"")
     for rec in reader:
         value = rec['number']
